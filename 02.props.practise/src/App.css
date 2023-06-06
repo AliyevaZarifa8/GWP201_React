@@ -1,0 +1,19 @@
+h1 {
+  text-align: center;
+  color: red;
+}
+
+.card {
+  border: 2px solid rgb(24, 231, 117);
+  width: 300px;
+  text-align: center;
+  padding: 10px;
+  color: rgb(12, 12, 43);
+}
+
+.cards {
+  margin: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
