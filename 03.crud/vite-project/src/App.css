@@ -1,0 +1,54 @@
+.card {
+  border: 2px solid black;
+  width: 200px;
+  padding: 20px 50px;
+  margin-left: 20px;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+}
+.card .text-danger {
+  color: red;
+  width: 36px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+h1 {
+  text-align: center;
+}
+
+.movieForm {
+  margin: 2rem auto;
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.movieForm input {
+  padding: 0.5rem 1rem 0.5rem 0;
+  text-indent: 0.5rem;
+}
+
+.btnForm {
+  border: 1px solid #000;
+  background-color: #000;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  color: #fff;
+}
+
+.btnForm:disabled {
+  background-color: #ddd;
+  border: 1px solid #ddd;
+  cursor: default;
+}
