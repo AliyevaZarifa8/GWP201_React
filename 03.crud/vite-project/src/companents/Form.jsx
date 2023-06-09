@@ -3,20 +3,22 @@ import { useState } from 'react'
 
 const Form = () => {
     const [inputValue, setInputValue] = useState({
-        name: '',
-        surname: ''
+        Title: '',
+        Year: '',
+        Images:''
     })
 
 
     const handleSubmit = (e) => {
         e.preventDefault()
         setInputValue({
-            name: '',
-            surname: ''
+            Title: '',
+            Year: '',
+            Images:''
         })
     }
 
-    const disbaledBtn = !inputValue.name || !inputValue.surname
+    const disbaledBtn = !inputValue.Title || !inputValue.Year
 
     return (
         <div>
@@ -25,9 +27,11 @@ const Form = () => {
 
                 <form className='movieForm' onSubmit={handleSubmit}>
                     <label htmlFor="title">Name</label>
-                    <input value={inputValue.name} onChange={(e) => setInputValue({ ...inputValue, name: e.target.value })} type="text" id='title' placeholder='Enter a name...' />
+                    <input value={inputValue.Title} onChange={(e) => setInputValue({ ...inputValue, Title: e.target.value })} type="text" id='title' placeholder='Enter a Title...' />
+                    <label htmlFor="title">Name</label>
+                    <input value={inputValue.Year} onChange={(e) => setInputValue({ ...inputValue, Year: e.target.value })} type="text" id='year' placeholder='Enter a Year...' />
                     <label htmlFor="year">Surname</label>
-                    <input value={inputValue.surname} onChange={(e) => setInputValue({ ...inputValue, surname: e.target.value })} type="text" placeholder='Enter a surname...' id='year' />
+                    <input value={inputValue.Images} onChange={(e) => setInputValue({ ...inputValue, Images: e.target.value })} type="file"  id='photo' />
                     <button disabled={disbaledBtn} type='submit' className='btnForm'>Submit</button>
                 </form>
             </div>

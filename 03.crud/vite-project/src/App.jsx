@@ -4,6 +4,7 @@ import "./App.css";
 import Movies from "./companents/Movies";
 import axios from "axios";
 import Form from "./companents/Form";
+import Button from "./companents/Button";
 const baseUrl = "http://localhost:8080/movies";
 
 function App() {
@@ -22,8 +23,9 @@ function App() {
   return (
     <>
       <div className="App">
-        <Form />
         <h1>Movies List</h1>
+        <Button/>
+        <Form />
         <Movies baseUrl={baseUrl} setMovies={setMovies} movies={movies} />
       </div>
     </>
